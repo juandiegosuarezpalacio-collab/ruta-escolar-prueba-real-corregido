@@ -1,0 +1,59 @@
+{
+  "Bachillerato 1": [
+    {
+      "orden": 1,
+      "nombre": "Juan Pablo",
+      "acudiente": "Mamá",
+      "telefono": "3154137032",
+      "barrio": "Turbay Ayala"
+    },
+    {
+      "orden": 2,
+      "nombre": "Nicolás Bedoya",
+      "acudiente": "Mamá",
+      "telefono": "3128840559",
+      "barrio": "Turbay Ayala"
+    },
+    {
+      "orden": 3,
+      "nombre": "Dilan Gañán",
+      "acudiente": "Abuela Teresa",
+      "telefono": "3206342481",
+      "barrio": "Turbay Ayala"
+    }
+  ],
+  "Bachillerato 2": [
+    {
+      "orden": 1,
+      "nombre": "Estudiante 1",
+      "acudiente": "Acudiente",
+      "telefono": "3000000001",
+      "barrio": "Centro"
+    },
+    {
+      "orden": 2,
+      "nombre": "Estudiante 2",
+      "acudiente": "Acudiente",
+      "telefono": "3000000002",
+      "barrio": "El Carmen"
+    }
+  ],
+  "Primaria": [
+    {
+      "orden": 1,
+      "nombre": "Estudiante Primaria",
+      "acudiente": "Acudiente",
+      "telefono": "3000000003",
+      "barrio": "Villa Juliana"
+    }
+  ],
+  "Transición": [
+    {
+      "orden": 1,
+      "nombre": "Estudiante Transición",
+      "acudiente": "Acudiente",
+      "telefono": "3000000004",
+      "barrio": "La Isabela"
+    }
+  ]
+}

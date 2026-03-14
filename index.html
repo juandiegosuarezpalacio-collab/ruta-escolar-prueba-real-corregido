@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruta Escolar - Prueba Real</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="hero">
+        <div class="hero-top">
+          <div>
+            <h1>🚌 Ruta Escolar</h1>
+            <p>Panel conductor para pruebas reales</p>
+          </div>
+          <span class="version">V4</span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-card">
+            <span>Ruta activa</span>
+            <strong id="routeName">Bachillerato 1</strong>
+          </div>
+          <div class="hero-card">
+            <span>Barrio actual</span>
+            <strong id="currentBarrioLabel">Turbay Ayala</strong>
+          </div>
+        </div>
+        <div class="hero-progress">
+          <span>Progreso</span>
+          <strong id="progressLabel">Estudiante 1 de 3</strong>
+        </div>
+      </div>
+
+      <section class="card">
+        <h2>Rutas</h2>
+        <div class="route-grid" id="routeTabs"></div>
+      </section>
+
+      <section class="card">
+        <h2>Modo conductor</h2>
+        <label class="field">
+          <span>Barrio</span>
+          <select id="barrioSelect"></select>
+        </label>
+
+        <label class="field">
+          <span>Canal WhatsApp</span>
+          <select id="sendMode">
+            <option value="auto">Automático</option>
+            <option value="app">WhatsApp móvil</option>
+            <option value="web">WhatsApp Web</option>
+          </select>
+        </label>
+
+        <div class="helper" id="channelLabel">
+          Canal activo: <strong>Automático</strong>
+        </div>
+
+        <div class="actions-grid">
+          <button class="btn primary" data-action="alistamiento">Alistamiento</button>
+          <button class="btn light" data-action="barrio">Avisar barrio</button>
+          <button class="btn ok" data-action="colegio">Llegó colegio</button>
+          <button class="btn success" id="btnNext">Siguiente</button>
+        </div>
+
+        <div class="status-box" id="statusText">Sistema listo para pruebas.</div>
+        <div class="tip-box">
+          En celular abrirá la app de WhatsApp y en PC intentará abrir WhatsApp Web.
+        </div>
+      </section>
+    </aside>
+
+    <main class="main">
+      <section class="card">
+        <h2>Mensaje generado</h2>
+        <div class="preview" id="preview"></div>
+        <div class="toolbar">
+          <button class="btn ok" id="btnSendCurrent">Enviar WhatsApp</button>
+          <button class="btn warn" id="btnCopyMessage">Copiar mensaje</button>
+          <button class="btn dark" id="btnViewLink">Ver enlace</button>
+        </div>
+      </section>
+
+      <div class="main-grid">
+        <section class="card">
+          <div class="card-head">
+            <h2>Orden de recogida</h2>
+            <span class="meta" id="progressLabelInline">Estudiante 1 de 3</span>
+          </div>
+          <label class="field">
+            <span>Buscar estudiante o barrio</span>
+            <input type="text" id="searchInput" placeholder="Ej. Juan, Centro, Mamá" />
+          </label>
+          <div id="studentList" class="student-list"></div>
+        </section>
+
+        <div class="stack">
+          <section class="card">
+            <h2>Diagnóstico IA</h2>
+            <div id="diagnosticsList" class="diagnostics-list"></div>
+          </section>
+
+          <section class="card">
+            <div class="card-head">
+              <h2>Bandeja</h2>
+              <button class="btn danger small" id="btnClearTray">Limpiar</button>
+            </div>
+            <div id="tray" class="tray"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
